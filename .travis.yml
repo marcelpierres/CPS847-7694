@@ -5,17 +5,11 @@ python:
 
   - "2.7"
 
-install:
-  - pip install codecov
-  - pip install coverage
-
 
 script: 
   - python test.py
   
   
-after_success:
-   - codecov --token=65346e0d-9082-4051-9961-0374f82a0003
 deploy:
  provider: s3
  
